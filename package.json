@@ -1,0 +1,25 @@
+{
+  "name": "express-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sslampa/express-rest-api.git"
+  },
+  "author": "Stephen Lampa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sslampa/express-rest-api/issues"
+  },
+  "homepage": "https://github.com/sslampa/express-rest-api#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

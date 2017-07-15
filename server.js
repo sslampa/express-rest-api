@@ -8,8 +8,7 @@ app.get('/api/hello-world', (req, res) => {
     res.json({first: "Hello", second: "World"})
 })
 
-app.route('/api/hello')
-  .get(hello.getHello)
+app.get('/api/hello', hello.getHello)
 
 app.get('/', (req, res) => {
     res.send('This is the opening page')

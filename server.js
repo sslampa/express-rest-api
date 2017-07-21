@@ -1,5 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const path = require('path')
 const app = express()
 const mongoose = require('mongoose')
 const User = require('./api/models/user')
@@ -25,8 +26,10 @@ app.route('/api/users')
   .get(hello.getUsers)
   .post(hello.addUser)
 
+app.use('/build', express.static('build'))
+
 app.get('/', (req, res) => {
-    res.send('This is the opening page')
+  res.sendFile(path.join(__dirname + '/index.html'))
 })
 
 app.listen(port, () => {

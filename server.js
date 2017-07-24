@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 
 
 app.get('/api/hello-world', (req, res) => {
-    res.json({first: "Hello", second: "World"})
+  res.json({first: 'Hello', second: 'World'})
 })
 
 app.get('/api/hello', hello.getHello)
@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log("Listening on port: " + port)
+  console.log('Listening on port: ' + port)
 })
 
 module.exports = app
